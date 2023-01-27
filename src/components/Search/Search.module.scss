@@ -1,0 +1,31 @@
+.search{
+    padding-left: 20px;
+    &_input{
+        border: 2px solid rgb(39, 39, 39);
+        height: 30px;
+        min-width: 270px;
+        border-radius: 10px;
+        padding-left: 10px;
+        
+        &_selected{
+            min-width: 270px;
+            display: block;
+            background: #fff;
+            width: fit-content;
+            margin-top: 5px;
+            border-radius: 10px;
+            padding: 7px;
+            max-height: 70px; 
+            overflow-y: scroll;   
+            &__item{
+                cursor: pointer;
+                &:hover{
+                    background-color: #d8d5d5;
+                }
+            }
+        }
+        &_noselected{
+           display: none;
+        }
+    }
+}
